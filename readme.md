@@ -8,7 +8,7 @@ a fork of the [NatLabs implementation](https://github.com/NatLabs/icrc1) of the
   - Replace the values enclosed in `< >` with your desired values and run in the terminal 
 
   ```motoko
-    git clone https://github.com/icsneed/sneed
+    git clone https://github.com/joeyboeyy/sneed-revamped
     cd sneed
     mops install
     dfx start --background --clean
