@@ -13,26 +13,31 @@ a fork of the [NatLabs implementation](https://github.com/NatLabs/icrc1) of the
     mops install
     dfx start --background --clean
 
-    dfx deploy icrc1 --argument '( record {                     
-        name = "<Insert Token Name>";                         
-        symbol = "<Insert Symbol>";                           
-        decimals = 6;                                           
-        fee = 1_000_000;                                        
-        logo = "data:image/jpeg;base64,$(base64 -w 0 <insert-logo.jpg>)";                                       
-        max_supply = 1_000_000_000_000;                         
-        initial_balances = vec {                                
-            record {                                            
-                record {                                        
-                    owner = principal "<Insert Principal>";   
-                    subaccount = null;                          
-                };                                              
-                100_000_000                                 
-            }                                                   
-        };                                                      
-        min_burn_amount = 10_000;                         
-        minting_account = null;                                 
-        advanced_settings = null;                               
-    })'
+    dfx deploy icrc1 --argument '( record {               
+    name = "<Insert Token Name>";                         
+    symbol = "<Insert Symbol>";                           
+    decimals = 8;                                           
+    fee = 1_0000_0000;            
+    logo = "data:image/jpeg;base64,$(base64 -w 0 <your-logo.jpg>)"; 
+    max_supply = 1_000_000_000_0000_0000;                         
+    initial_balances = vec {                                
+        record {                                            
+            record {                                        
+                owner = principal \"ok64y-uiaaa-aaaag-qdcbq-cai\";   
+                subaccount = null;                          
+            };                                              
+            1_000_000_000_0000_0000                                     
+        }                                                   
+    };                                                             
+    min_burn_amount = 10_000;
+    minting_account = (
+            opt record {
+                owner=principal \"fp274-iaaaa-aaaaq-aacha-cai\"; 
+                subaccount=null
+            }
+        );
+    advanced_settings = null;
+})'
   ```
 
 ## Funding
