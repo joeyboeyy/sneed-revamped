@@ -4,6 +4,14 @@
         "icrc1": {
             "type": "motoko",
             "main": "src/ICRC1/Canisters/Token.mo"
+        },
+		"archive": {
+			"type": "motoko",
+			"main": "src/ICRC1/Canisters/Archive.mo"
+		},
+		"icrc1-staging": {
+			"type": "motoko",
+			"main": "src/ICRC1/Canisters/Token.mo"
         }
     },
     "defaults": {
