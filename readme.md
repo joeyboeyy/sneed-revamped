@@ -5,7 +5,7 @@ a fork of the [NatLabs implementation](https://github.com/NatLabs/icrc1) of the
 
 NB: A logo field has been added to the construction arguments. Below is the example from NatLabs, modified to include the logo field.
 
-  - On line 29 of src/ICRC1/Canisters/Archive.mo, replace the value enclosed in `< >` with your token's canister ID
+  - On BOTH line 3 of `canister_ids.json` and line 29 of `src/ICRC1/Canisters/Archive.mo`, replace the value enclosed in `< >` with your token's canister ID
   - Replace the values enclosed in `< >` with your desired values and run in the terminal 
 
   ```motoko
