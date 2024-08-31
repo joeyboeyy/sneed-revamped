@@ -2,7 +2,8 @@
     name = "<Insert Token Name>";                         
     symbol = "<Insert Symbol>";                           
     decimals = 8;                                           
-    fee = 1_0000_0000;                                        
+    fee = 1_0000_0000;            
+    logo = "data:image/jpeg;base64,$(base64 -w 0 <your-logo.jpg>)"; 
     max_supply = 1_000_000_000_0000_0000;                         
     initial_balances = vec {                                
         record {                                            
