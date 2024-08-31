@@ -9,7 +9,7 @@ a fork of the [NatLabs implementation](https://github.com/NatLabs/icrc1) of the
 
   ```motoko
     git clone https://github.com/joeyboeyy/sneed-revamped
-    cd sneed
+    cd sneed-revamped
     mops install
     dfx start --background --clean
 
